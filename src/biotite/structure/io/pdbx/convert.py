@@ -1618,7 +1618,7 @@ def _convert_string_to_sequence(string, stype):
             "mmCIF _entity_poly.type unsupported" " type: " + stype
         )
 
-def _get_sse(pdbx_file, data_block=None):
+def get_sse(pdbx_file, data_block=None):
     """
     Gets secondary structure from pdbx file
 
