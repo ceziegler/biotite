@@ -1628,7 +1628,7 @@ def get_sse(pdbx_file, data_block=None):
         The file object.
     
     Returns
-    ----------
+    -------
     sec_struct_dic: keys are the different chains from the pdbx file 
     and values are a letter representing the secondary structure
     'a' means alpha-helix, 'b' means beta-strand/sheet, 'c' means coil. 
