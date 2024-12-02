@@ -1655,7 +1655,8 @@ def get_sse(pdbx_file, data_block=None):
 
         # set alpha helix positions
         for idx in range(len(pdb_chain)):
-            sec_struct_dic[pdb_chain[idx]][start_pos[idx]:(end_pos[idx]+1)] = 'a'
+            # Translate the 1-based positions from PDBx into 0-based array indices
+            sec_struct_dic[pdb_chain[idx]][start_pos[idx]-1:(end_pos[idx])] = 'a'
 
     # Get beta sheets
     if "struct_sheet" in cif_feats:
